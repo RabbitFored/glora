@@ -1,7 +1,6 @@
 package main
 
 import (
-  
   "net/http"
   )
   
@@ -46,12 +45,14 @@ func Bot(token string,settings *Settings) (*bot,error) {
   
 }
 
+
+
 type bot struct{
   Token string
   BaseURL string
   BaseFileURL string
   Client      *http.Client
-  ParseMode string
+  ParseModei string
   Self          *User
 }
 
